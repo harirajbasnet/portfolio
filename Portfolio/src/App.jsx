@@ -4,6 +4,7 @@ import Paragraph from './Insideintro/Subintro'
 import About from './Pages/about'
 import 'remixicon/fonts/remixicon.css'
 import Skill from './Pages/Skill'
+import Projects from './Pages/Projects'
 const App = () => {
   return (
  <div >
@@ -13,6 +14,7 @@ const App = () => {
 <Paragraph/>
 <About/>
 <Skill/>
+<Projects/>
 </div>
 </div>
   )
