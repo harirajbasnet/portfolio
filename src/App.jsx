@@ -5,6 +5,7 @@ import About from './Pages/about'
 import 'remixicon/fonts/remixicon.css'
 import Skill from './Pages/Skill'
 import Projects from './Pages/Projects'
+import Contact from './Pages/Contact'
 const App = () => {
   return (
  <div >
@@ -15,6 +16,7 @@ const App = () => {
 <About/>
 <Skill/>
 <Projects/>
+<Contact/>
 </div>
 </div>
   )

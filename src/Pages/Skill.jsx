@@ -57,7 +57,7 @@ const Skill = () => {
 
     <div className='grid grid-cols-3 w-3/4 gap-7'>   
    { SKILLNAME.map((index)=> (
-     <div key={index} className='flex justify-center'>
+     <div className='flex justify-center'>
         <SkillCard img={index.img} Name={index.Name}/>      
     </div>
     ))}
