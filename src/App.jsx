@@ -6,18 +6,20 @@ import 'remixicon/fonts/remixicon.css'
 import Skill from './Pages/Skill'
 import Projects from './Pages/Projects'
 import Contact from './Pages/Contact'
+import Footer from './Componets/footer'
 const App = () => {
   return (
  <div >
-<Navbar/>
+  <div> <Navbar/></div>
 <div className='bg-stone-400'>
-<Intro/>
+<div id='home'><Intro/></div>
 <Paragraph/>
-<About/>
-<Skill/>
-<Projects/>
-<Contact/>
+<div id="about"><About/></div>
+<div id='skill'><Skill/></div>
+<div id='project'><Projects/></div>
+<div id='contact'><Contact/></div>
 </div>
+<div><Footer/></div>
 </div>
   )
 }
