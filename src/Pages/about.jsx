@@ -35,9 +35,9 @@ const About = () => {
       </div>
 
    <Break/> 
-      <div className="w-full flex flex-col items-center gap-20">
+      <div className="w-full flex flex-col items-center  gap-20">
 
-        <div className="flex gap-4 md:gap-50 mt-5 justify-center ">
+        <div className="flex gap-4 md:gap-50 mt-5 justify-center flex-col md:flex-row ">
 
           <div className=" h-[100px] border-2 w-xs">
             <h1>Design</h1>

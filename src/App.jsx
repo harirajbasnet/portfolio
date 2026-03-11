@@ -9,9 +9,9 @@ import Contact from './Pages/Contact'
 import Footer from './Componets/footer'
 const App = () => {
   return (
- <div >
-  <div> <Navbar/></div>
-<div className='bg-stone-400'>
+ <div>
+  <div className='p-10'> <Navbar/></div>
+<div className='bg-stone-400 w-full'>
 <div id='home'><Intro/></div>
 <Paragraph/>
 <div id="about"><About/></div>
