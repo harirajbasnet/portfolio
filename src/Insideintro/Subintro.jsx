@@ -3,8 +3,8 @@ import { useState } from "react"
 const Subintro = () => {
   const [Expand, setExpand] = useState(false)
   return (
-    <div className=' bg-black text-white p-4 rounded-b-3xl'>
-        <p className='w-3/4 text-justify ' >
+    <div className=' bg-black text-white rounded-b-3xl p-10 md:p-2'>
+        <p className='w-full md:w-3/4 text-justify  leading-relaxed ' >
             Namaste! It's me Hariraj Basnet from Nepal.Iam currently pursuing a degree in Computer science and Information Technology, where my academic journey has equipped me with a strong foundation in various aspects of IT. Concurrently,my burgeoning interest and expertise lie in the realm of frontend development.In the dynamic world of technology, I have immersed myself in the intricacies of HTML, CSS, and JavaScript, continually expanding my skill set to meet the evolving demands of modern web development. My approach to frontend development is not merely technical but deeply rooted in creativity and an acute attention to detail.
             {
               Expand?(

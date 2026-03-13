@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const Navbar = () => {
 const [IsOpen, setIsOpen] = useState(false)
   return (
-    <div className='p-3 flex justify-between border-2 '>
-        <div className='text-5xl font-bold bg-white  flex w-xs justify-start p-4'>
+    <div className='flex justify-between border-2 bg-white h-[100px]'>
+        <div className='text-5xl font-bold bg-white  flex w-xs justify-start p-4 items-center'>
             <span className="text-red-600 group-hover:text-red-400 transition-colors">
              &lt;
             </span>
@@ -13,19 +13,19 @@ const [IsOpen, setIsOpen] = useState(false)
             ./&gt;
            </span>
          </div>
-          <div className="md:hidden text-2xl cursor-pointer" onClick={() => setIsOpen(!IsOpen)}>
+          <div className="md:hidden text-2xl cursor-pointer justify-center flex  items-center" onClick={() => setIsOpen(!IsOpen)}>
           <i className={IsOpen ? "ri-close-line" : "ri-menu-line"}></i>
         </div>
 
          <div className={`
         ${IsOpen ? 'flex' : 'hidden'} 
         md:flex flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto 
-        bg-white md:bg-transparent gap-5 py-5 px-6 text-xl font-semibold font-mono border-b md:border-none
+        bg-white md:bg-transparent gap-5 py-5 px-6 text-xl font-semibold font-mono border-b md:border-none  items-center
       `}>
              <a href="#about">About me</a>
              <a href="#skill">Skills</a> 
               <a href="#project">Projects</a>    
-              <a href="#contact">CONTACT ME</a>
+              <a href="#contact" className='bg-red-500 p-4 rounded-2xl hover:bg-white'>CONTACT ME</a>
          </div>
                
     </div>
