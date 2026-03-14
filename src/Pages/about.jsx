@@ -4,14 +4,14 @@ import Break from '../PageBreak/Break'
 const About = () => {
     const [Expand, setExpand] = useState(false)
   return (
-    <div className=' p-4 justify-center flex flex-col items-center  gap-10'>
+    <div className=' p-4 justify-center flex flex-col items-center gap-5 md:gap-10'>
        
-      <div className="h-[200px] flex items-center justify-center relative ">
-        <h1 className=" absolute bottom-0 border-2  p-5 w-xs justify-center flex text-4xl font-bold ">ABOUT ME</h1>
+      <div className="h-[100px] md:h-[200px] flex items-center justify-center relative ">
+        <h1 className=" absolute bottom-0 border-2  p-2 md:p-5 w-3xs md:w-xs justify-center flex text-xl md:text-4xl font-bold ">ABOUT ME</h1>
       </div>
 
-      <div className=" w-3/4 py-5">
-        <p className='text-justify ' >
+      <div className=" w-full md:w-3/4 py-2 md:py-5">
+        <p className='text-justify  ' >
             Namaste! It's me Hariraj Basnet from Nepal.Iam currently pursuing a degree in Computer science and Information Technology, where my academic journey has equipped me with a strong foundation in various aspects of IT.
             {
               Expand?(
@@ -27,7 +27,7 @@ const About = () => {
         <div className="w-full flex justify-center">
         <button 
         onClick={() => setExpand(!Expand)}
-        className="mt-4 font-semibold flex items-center gap-2 text-2xl transition-all"
+        className="mt-2 md:mt-4 font-semibold flex items-center gap-2 text-xl md:text-2xl transition-all"
       >
         {Expand ? "Show Less" : "Explore"}
         <i className={Expand ? "ri-arrow-up-s-line" : "ri-arrow-down-s-line"}></i>
@@ -35,20 +35,20 @@ const About = () => {
       </div>
 
    <Break/> 
-      <div className="w-full flex flex-col items-center  gap-20">
+      <div className="w-full flex flex-col items-center  gap-6 md:gap-20">
 
-        <div className="flex gap-4 md:gap-50 mt-5 justify-center flex-col md:flex-row ">
+        <div className="flex gap-4 md:gap-50 mt-5 justify-center items-center flex-col md:flex-row ">
 
-          <div className=" h-[100px] border-2 w-xs">
+          <div className=" h-[100px] border-2 w-3xs md:w-xs">
             <h1>Design</h1>
           </div> 
 
-      <div  className="w-xs h-[100px] border-2">
+      <div  className="w-3xs md:w-xs h-[100px] border-2">
           <h1>Development</h1>
       </div>
     </div>
 
-        <div className="w-xs h-[100px] border-2">
+        <div className="w-3xs md:w-xs h-[100px] border-2">
            <h1> Maintenance</h1>
         </div>
       </div>

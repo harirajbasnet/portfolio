@@ -48,23 +48,23 @@ const Skill = () => {
     ]
 
   return (
-    <div className="p-4 justify-center flex flex-col items-center  gap-15 " >
-        <div className="h-[200px] flex items-center justify-center relative  ">
-        <h1 className="absolute bottom-0 border-2  p-5 w-xs justify-center flex text-4xl font-bold tracking-wide" >
+    <div className="p-2 md:p-4 justify-center flex flex-col items-center  gap-8 md:gap-15 " >
+        <div className="h-[100px] md:h-[200px] flex items-center justify-center relative  ">
+        <h1 className="absolute bottom-0 border-2  p-2 md:p-5 w-3xs md:w-xs justify-center flex text-xl md:text-4xl font-bold tracking-wide" >
           SKILL
         </h1>
         </div>
-    <div className='justify-start flex w-full text-3xl tracking-widest '>
+    <div className='justify-start flex w-full text-xl md:text-3xl tracking-widest '>
       <h1>USING NOW :</h1>
     </div>
-    <div className='grid grid-cols-3 w-3/4 gap-7 mt-5'>   
+    <div className='grid grid-cols-2 md:grid-cols-3 w-full md:w-3/4 gap-5 md:gap-7 mt-2 md:mt-5'>   
    { SKILLNAME.map((index)=> (
      <div className='flex justify-center'>
         <SkillCard img={index.img} Name={index.Name}/>      
     </div>
     ))}
   </div> 
-  <div className='justify-start flex w-full text-3xl tracking-widest '>
+  <div className='justify-start flex w-full text-xl md:text-3xl tracking-widest '>
       <h1>LEARNING NOW :</h1>
     </div> 
   <div className='grid grid-cols-3 w-3/4 gap-7'>   
