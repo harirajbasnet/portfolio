@@ -16,7 +16,7 @@ const Subintro = () => {
               )
             } 
         </p>
-        <div className="w-full flex justify-center md:hidden">
+        <div className="w-full flex justify-center ">
         <button 
         onClick={() => setExpand(!Expand)}
         className="mt-4 text-red-600 font-bold hover:underline flex items-center gap-1 transition-all"

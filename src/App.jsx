@@ -11,7 +11,7 @@ const App = () => {
   return (
  <div id='start'>
   <div> <Navbar/></div>
-<div className='bg-stone-400 w-full '>
+<div className='bg-stone-400 w-full p-3 '>
 <div id='home'><Intro/></div>
 <Paragraph/>
 <div id="about"><About/></div>

@@ -39,17 +39,20 @@ const About = () => {
 
         <div className="flex gap-4 md:gap-50 mt-5 justify-center items-center flex-col md:flex-row ">
 
-          <div className=" h-[100px] border-2 w-3xs md:w-xs">
-            <h1>Design</h1>
+          <div className=" w-3xs md:w-xs h-fit  object-cover gap-3">
+            <h1 className="text-xl md:text-2xl">Design</h1>
+            <p  className="text-justify">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
           </div> 
 
-      <div  className="w-3xs md:w-xs h-[100px] border-2">
-          <h1>Development</h1>
+      <div  className="w-3xs md:w-xs h-fit  object-cover gap-3 ">
+          <h1 className="text-xl md:text-2xl">Development</h1>
+          <p  className="text-justify">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
       </div>
     </div>
 
-        <div className="w-3xs md:w-xs h-[100px] border-2">
-           <h1> Maintenance</h1>
+        <div className="w-3xs md:w-xs h-fit  object-cover gap-3">
+           <h1 className="text-xl md:text-2xl"> Maintenance</h1>
+           <p className="text-justify">I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
         </div>
       </div>
       
