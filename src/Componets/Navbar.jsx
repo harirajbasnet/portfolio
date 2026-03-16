@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { ThemeData } from '../ThemeContext/Darkcontex'
 
 const Navbar = () => {
 const [IsOpen, setIsOpen] = useState(false)
+const [theme,setTheme] = useContext(ThemeData)
+
+const ChangeTheme =() => {
+  setTheme('dark')
+}
   return (
     <div className='flex justify-between border-2 bg-white h-[100px]'>
         <div className='text-5xl font-bold bg-white  flex w-xs justify-start p-4 items-center'>
@@ -26,6 +32,8 @@ const [IsOpen, setIsOpen] = useState(false)
              <a href="#skill">Skills</a> 
               <a href="#project">Projects</a>    
               <a href="#contact" className='bg-red-500 p-4 rounded-2xl hover:bg-white'>CONTACT ME</a>
+              <button > text</button>
+
          </div>
                
     </div>
