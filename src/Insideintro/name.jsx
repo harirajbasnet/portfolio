@@ -1,12 +1,16 @@
+import { useContext } from 'react'
 import { Typewriter } from 'react-simple-typewriter'
+import { ThemeData } from '../ThemeContext/Darkcontex'
+
 const Name= () => {
+  const [theme,setTheme] = useContext(ThemeData)
   return (
 
         
          <div className="flex flex-col text-xm md:text-4xl  py-3 font-sans font-semibold items-center gap-2 md:gap-10  ">
                     <span className='w-fit'> HI, I am</span>
                     <div className='flex flex-col gap-3 items-center '>
-                   <span className='border-2 bg-white p-3 '>
+                   <span className={theme?'border-2 bg-white p-3':'border-2 bg-black p-3'}>
                       <Typewriter
                           words={['Hari Raj Basnet']}
                           loop={0} // 0 means infinite loop

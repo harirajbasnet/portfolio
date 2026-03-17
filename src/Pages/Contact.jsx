@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import emailjs from '@emailjs/browser';
+import { ThemeData } from "../ThemeContext/Darkcontex";
 const Contact = () => {
-
+const [theme,setTheme] = useContext(ThemeData)
   const [formData, setFormData] = useState({
     userName: "",
     email: "",
     phone:"",
     message: ""
   });
-
   const submitHandler= (e) => {
     e.preventDefault()
   emailjs.send(
@@ -41,7 +41,7 @@ const Contact = () => {
         <h1 className=" absolute bottom-0 border-2 p-2 md:p-5 w-3xs md:w-xs justify-center flex text-xl md:text-4xl font-bold ">CONTACT </h1>
       </div>
       <div className="w-full flex justify-center">
-<form onSubmit={submitHandler} className="flex flex-col gap-2 md:gap-5 w-xl justify-center border-2 p-3"> 
+<form onSubmit={submitHandler} className= "flex flex-col gap-2 md:gap-5 w-xl justify-center border-2 p-3"> 
 
   <div className="flex flex-col gap-2 p-2"> 
    <label className="text-xl md:text-2xl font-semibold text-gray-900">Name</label>
@@ -49,10 +49,9 @@ const Contact = () => {
   onChange={handleChange}
   name="userName"
   value={formData.userName}
-  placeholder="Ram Basnet"
+  placeholder="John"
   required
-  className=" bg-zinc-300 border-x-3 border-gray-400 font-stretch-50% text-xs md:text-2xl p-2  rounded-2xl outline-none"
-  />
+  className="bg-zinc-300 border-x-3 border-gray-400 font-stretch-50% text-xs md:text-2xl p-2 rounded-2xl outline-none"/>
   </div>
 
 
