@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Movie from './movie.png'
 import Builders from './builders.png'
+import Ecom from './ecom.png'
 
 const ProjectCard = () => {
    const projectName =[
@@ -15,6 +16,13 @@ const ProjectCard = () => {
             img:Movie,
             Name:"MOVIE APP",
             Link:"https://hrbvision.vercel.app/"
+
+        },
+          {
+            id:3,
+            img:Ecom,
+            Name:"E-COMMERSE",
+            Link:"https://hrbmart.vercel.app/"
 
         }
     ]
